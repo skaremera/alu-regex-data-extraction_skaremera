@@ -1,0 +1,181 @@
+{
+  "emails": {
+    "alu_staff": [
+      "records@alueducation.com",
+      "amara.diallo@alueducation.com",
+      "fatou.ndiaye@alueducation.com",
+      "k.asante@alueducation.com",
+      "billing@alueducation.com",
+      "digest-admin@alueducation.com"
+    ],
+    "alu_alumni": [
+      "tunde.oke@alumni.alueducation.com"
+    ],
+    "alu_si": [
+      "lena.fischer@si.alueducation.com"
+    ],
+    "other": [
+      "valid_looking_but_not@alueducation.org",
+      "info@partner-university.edu",
+      "support@partner-university.org"
+    ],
+    "rejected": [
+      {
+        "value": "james..bond@alueducation.com",
+        "reason": "consecutive dots"
+      }
+    ]
+  },
+  "urls": {
+    "valid": [
+      "https://payments.alueducation.com/support",
+      "https://www.jstor.org/stable/10.2307/1234567",
+      "https://scholar.google.com/scholar?q=african+leadership+university",
+      "http://www.openaccess.africa/resources/education/higher-ed.html",
+      "https://moodle.alueducation.com/course/view.php?id=4821",
+      "https://library.alueducation.com/databases?subject=CS&year=2024",
+      "https://twitter.com/alueducation",
+      "https://instagram.com/alu_education",
+      "https://community.alueducation.com/forum",
+      "https://github.com/alueducation",
+      "https://moodle.alueducation.com",
+      "https://alumni.partner-university.edu/login",
+      "https://www.alueducation.com"
+    ],
+    "rejected": [
+      {
+        "value": "[REDACTED]",
+        "reason": "injection marker in URL"
+      },
+      {
+        "value": "[REDACTED]",
+        "reason": "injection marker in URL"
+      },
+      {
+        "value": "[REDACTED]",
+        "reason": "injection marker in URL"
+      },
+      {
+        "value": "[REDACTED]",
+        "reason": "injection marker in URL"
+      }
+    ]
+  },
+  "phones": {
+    "valid": [
+      "+250 788 123 456",
+      "+1 (415) 867-5309",
+      "+44 20 7946 0321",
+      "+49 30 901820",
+      "078-456-7890",
+      "+250 788 000 111",
+      "+1-800-555-0199",
+      "0722-555-678",
+      "900-555-0100"
+    ]
+  },
+  "credit_cards": {
+    "valid": [
+      {
+        "masked": "**** **** **** 1111",
+        "luhn_pass": true
+      },
+      {
+        "masked": "****-****-****-0004",
+        "luhn_pass": true
+      },
+      {
+        "masked": "**** ****** 88431",
+        "luhn_pass": true
+      },
+      {
+        "masked": "************1117",
+        "luhn_pass": true
+      }
+    ],
+    "rejected": [
+      {
+        "masked": "**** **** **** 9999",
+        "reason": "failed Luhn check"
+      }
+    ]
+  },
+  "times": {
+    "valid": [
+      "09:00 AM",
+      "02:30 PM",
+      "11:15 AM",
+      "08:00 AM",
+      "14:00",
+      "16:45",
+      "12:00 PM"
+    ],
+    "rejected": []
+  },
+  "html_tags": {
+    "safe": [
+      "<h1>",
+      "</h1>",
+      "<p>",
+      "<a href=\"https://moodle.alueducation.com\">",
+      "</a>",
+      "</p>",
+      "<div class=\"alert alert-warning\">",
+      "<strong>",
+      "</strong>",
+      "</div>",
+      "<img src=\"https://cdn.alueducation.com/assets/logo.png\" alt=\"ALU Logo\" />",
+      "<ul>",
+      "<li>",
+      "</li>",
+      "</ul>",
+      "<br/>",
+      "<input type=\"text\" name=\"search\" placeholder=\"Search courses...\" />",
+      "<html>",
+      "</html>"
+    ],
+    "dangerous": [
+      "<script>",
+      "</script>",
+      "<iframe src=\"x\" onerror=\"steal()\">",
+      "<iframe src=\"https://phishing.example.com\" style=\"display:none\">",
+      "</iframe>"
+    ],
+    "suspicious": [
+      "<img src=\"x\" onerror=\"window.location='https://attacker.io'\">",
+      "<a href=\"javascript:void(stealCredentials())\">"
+    ]
+  },
+  "hashtags": {
+    "valid": [
+      "#ALU2024",
+      "#AfricanLeaders",
+      "#TechForAfrica",
+      "#ALUAlumni",
+      "#LearnGrowLead",
+      "#GivingTuesdayALU",
+      "#ALUCommunity"
+    ],
+    "rejected": []
+  },
+  "currency": {
+    "valid": [
+      "$1,250.00",
+      "$980.50",
+      "€2,100.75",
+      "£750.00",
+      "$400.00",
+      "$999",
+      "$48,250.00",
+      "$12,500.00",
+      "€11,300.00",
+      "$4,166.67",
+      "£2,083.50"
+    ]
+  },
+  "meta": {
+    "extracted_at": "2026-05-24T13:00:05.953204+00:00",
+    "source_file": "/home/claude/alu-regex-data-extraction/input/raw-text.txt",
+    "lines_processed": 151
+  }
+}
