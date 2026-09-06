@@ -1,7 +1,7 @@
 """
 ALU Regex Data Extraction & Secure Validation
 =============================================
-Author : Karemera Shema Keith
+Author : Karemera Shema 
 Date   : 2026-24-05
 Purpose: Extract and validate structured data from raw API text using regex.
          All input is treated as untrusted. Sensitive data is masked in output.
