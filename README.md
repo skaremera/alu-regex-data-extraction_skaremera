@@ -6,7 +6,7 @@ treated as untrusted, and security considerations are applied at every step.
 
 ---
 
-## Project Structure
+## Project Structuree
 
 ```
 alu-regex-data-extraction_darcy113/
